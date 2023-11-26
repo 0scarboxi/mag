@@ -1,9 +1,28 @@
 # mag
 Para trabajar en este trabajo necesitamos establecer la siguiente configuracion:
-en los archivos de configuracion de xampp: 
+en los archivos de configuracion de xampp:
+
+Para windows:
+`C:/xampp/htdocs/mag/public`
+
+Para mac:
 `/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf`
 
 ### Tendremos que poner esto:
+
+Para windows:
+```
+<VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "C:/xampp/htdocs/mag/public"
+    ServerName mag.local
+    ServerAlias www.mag.local
+    ErrorLog "logs/dummy-host.example.com-error_log"
+    CustomLog "logs/dummy-host.example.com-access_log" common
+</VirtualHost>
+```
+
+Para mac:
 ```
 <VirtualHost mag.local:80>
     ServerAdmin webmaster@dummy-host.example.com
