@@ -51,7 +51,6 @@ VALUES
 ('Magna 6', 'De trigo', 6, 'Alemania', 4, 'images/6.png'),
 ('Magna 7', 'Negra', 4, 'Bélgica', 5, 'images/7.png'),
 ('Magna 8', 'Tostada', 7, 'Estados Unidos', 6, 'images/8.png'),
-('Magna 9', 'Rubia', 5, 'España', 3, 'images/9.png'),
-('Magna 10', 'Negra', 6, 'Alemania', 4, 'images/10.png');
+('Magna 9', 'Rubia', 5, 'España', 3, 'images/9.png');
 
 ```
