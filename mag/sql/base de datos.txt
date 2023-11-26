@@ -1,0 +1,27 @@
+CREATE DATABASE IF NOT EXISTS cerveceria;
+
+USE cerveceria;
+
+CREATE TABLE IF NOT EXISTS cervezas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    tipo VARCHAR(10) NOT NULL,
+    graduacion_alcoholica INT NOT NULL CHECK(graduacion_alcoholica > 0),
+    pais VARCHAR(60) NOT NULL,
+    precio INT NOT NULL CHECK(precio > 0),
+    ruta_imagen VARCHAR(100) NOT NULL
+);
+
+
+INSERT INTO cervezas (nombre, tipo, graduacion_alcoholica, pais, precio, ruta_imagen) 
+VALUES 
+('Magna 1', 'Tostada', 5, 'España', 3, 'images/1.png'),
+('Magna 2', 'Rubia', 6, 'Alemania', 4, 'images/2.png'),
+('Magna 3', 'De trigo', 4, 'Bélgica', 5, 'images/3.png'),
+('Magna 4', 'Negra', 7, 'Estados Unidos', 6, 'images/4.png'),
+('Magna 5', 'Rubia', 5, 'España', 3, 'images/5.png'),
+('Magna 6', 'De trigo', 6, 'Alemania', 4, 'images/6.png'),
+('Magna 7', 'Negra', 4, 'Bélgica', 5, 'images/7.png'),
+('Magna 8', 'Tostada', 7, 'Estados Unidos', 6, 'images/8.png'),
+('Magna 9', 'Rubia', 5, 'España', 3, 'images/9.png'),
+('Magna 10', 'Negra', 6, 'Alemania', 4, 'images/10.png');
